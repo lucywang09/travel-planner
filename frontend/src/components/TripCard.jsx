@@ -33,12 +33,12 @@ export default function TripCard({ trip, selected, onSelect, onDelete }) {
       className={[
         'group cursor-pointer rounded-xl border overflow-hidden transition-all duration-300 animate-card-appear',
         selected
-          ? 'border-indigo-500/50 scale-[1.015] shadow-[0_0_32px_rgba(99,102,241,0.22)]'
+          ? 'border-amber-500/50 scale-[1.015] shadow-[0_0_32px_rgba(245,158,11,0.22)]'
           : 'border-white/[0.07] hover:border-white/[0.16] hover:scale-[1.015] hover:shadow-[0_10px_36px_rgba(0,0,0,0.55)]',
       ].join(' ')}
     >
       {/* ── Cover image ───────────────────────────────── */}
-      <div className="relative h-[112px] overflow-hidden bg-gradient-to-br from-indigo-950 to-slate-950">
+      <div className="relative h-[112px] overflow-hidden bg-gradient-to-br from-amber-950 to-slate-950">
         <img
           src={getImg(trip.destination)}
           alt={trip.destination}
@@ -53,7 +53,7 @@ export default function TripCard({ trip, selected, onSelect, onDelete }) {
 
         {/* Selected badge */}
         {selected && (
-          <div className="absolute top-2.5 right-2.5 flex items-center gap-1 bg-indigo-500/80 backdrop-blur-sm px-2 py-0.5 rounded-full border border-indigo-400/40">
+          <div className="absolute top-2.5 right-2.5 flex items-center gap-1 bg-amber-500/80 backdrop-blur-sm px-2 py-0.5 rounded-full border border-amber-400/40">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-[pulse_1.5s_ease-in-out_infinite]" />
             <span className="text-[10px] font-bold text-white">Active</span>
           </div>
@@ -78,10 +78,10 @@ export default function TripCard({ trip, selected, onSelect, onDelete }) {
 
       {/* ── Info ──────────────────────────────────────── */}
       <div className={`px-3.5 py-3 transition-colors duration-300 ${
-        selected ? 'bg-indigo-950/35' : 'bg-[#111320]'
+        selected ? 'bg-amber-950/35' : 'bg-[#111320]'
       }`}>
         <p className={`text-sm font-semibold leading-tight truncate ${
-          selected ? 'text-indigo-200' : 'text-slate-100'
+          selected ? 'text-amber-200' : 'text-slate-100'
         }`}>
           {trip.destination}
         </p>

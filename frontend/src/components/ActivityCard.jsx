@@ -27,7 +27,7 @@ const getActivityMeta = (title) => {
     return { emoji: '✈️', label: 'Transport', bg: 'bg-sky-500/12', border: 'border-sky-500/25', tag: 'text-sky-300 bg-sky-500/15 border-sky-500/25' };
   if (/show|concert|theatre|theater|event|festival|night|bar|club|performance|tour|safari/.test(t))
     return { emoji: '🎭', label: 'Events',    bg: 'bg-yellow-500/12', border: 'border-yellow-500/25', tag: 'text-yellow-300 bg-yellow-500/15 border-yellow-500/25' };
-  return   { emoji: '📍', label: 'Activity',  bg: 'bg-indigo-500/12', border: 'border-indigo-500/25', tag: 'text-indigo-300 bg-indigo-500/15 border-indigo-500/25' };
+  return   { emoji: '📍', label: 'Activity',  bg: 'bg-amber-500/12', border: 'border-amber-500/25', tag: 'text-amber-300 bg-amber-500/15 border-amber-500/25' };
 };
 
 export default function ActivityCard({ activity, onDelete }) {

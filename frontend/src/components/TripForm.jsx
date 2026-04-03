@@ -28,8 +28,8 @@ export default function TripForm({ onAdd, loading }) {
     <div className="card p-5">
       {/* Section header */}
       <div className="flex items-center gap-2.5 mb-4">
-        <div className="w-7 h-7 rounded-lg bg-indigo-500/15 border border-indigo-500/20 flex items-center justify-center">
-          <MapPinIcon className="w-3.5 h-3.5 text-indigo-400" />
+        <div className="w-7 h-7 rounded-lg bg-amber-500/15 border border-amber-500/20 flex items-center justify-center">
+          <MapPinIcon className="w-3.5 h-3.5 text-amber-400" />
         </div>
         <h2 className="text-sm font-semibold text-slate-200">Plan a new trip</h2>
       </div>

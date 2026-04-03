@@ -162,8 +162,8 @@ export default function App() {
       className="min-h-screen text-slate-200"
       style={{
         background:
-          'radial-gradient(ellipse 70% 55% at 5% 45%, rgba(99,102,241,0.07), transparent),' +
-          'radial-gradient(ellipse 55% 45% at 95% 5%, rgba(139,92,246,0.05), transparent),' +
+          'radial-gradient(ellipse 70% 55% at 5% 45%, rgba(245,158,11,0.07), transparent),' +
+          'radial-gradient(ellipse 55% 45% at 95% 5%, rgba(249,115,22,0.05), transparent),' +
           '#0b0c14',
       }}
     >
@@ -183,11 +183,11 @@ export default function App() {
         <div className="relative mb-8 rounded-2xl overflow-hidden border border-white/[0.07] bg-[#0d0e1c]">
           {/* Animated ambient orbs */}
           <div className="absolute -top-10 -right-10 w-80 h-80 rounded-full blur-3xl pointer-events-none"
-               style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.14), transparent)', animation: 'glow-pulse 5s ease-in-out infinite' }} />
+               style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.14), transparent)', animation: 'glow-pulse 5s ease-in-out infinite' }} />
           <div className="absolute -bottom-14 left-1/3 w-64 h-64 rounded-full blur-3xl pointer-events-none"
-               style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.12), transparent)', animation: 'glow-pulse 7s ease-in-out infinite 1.5s' }} />
+               style={{ background: 'radial-gradient(circle, rgba(249,115,22,0.12), transparent)', animation: 'glow-pulse 7s ease-in-out infinite 1.5s' }} />
           <div className="absolute top-1/2 right-1/4 w-48 h-48 -translate-y-1/2 rounded-full blur-2xl pointer-events-none"
-               style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.08), transparent)', animation: 'glow-pulse 4s ease-in-out infinite 0.8s' }} />
+               style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.08), transparent)', animation: 'glow-pulse 4s ease-in-out infinite 0.8s' }} />
 
           {/* Dot-grid texture */}
           <div className="absolute inset-0 opacity-[0.025] pointer-events-none"
@@ -195,14 +195,14 @@ export default function App() {
 
           {/* Horizontal shimmer line */}
           <div className="absolute top-0 left-0 right-0 h-[1px]"
-               style={{ background: 'linear-gradient(90deg, transparent, rgba(99,102,241,0.5) 40%, rgba(139,92,246,0.4) 60%, transparent)' }} />
+               style={{ background: 'linear-gradient(90deg, transparent, rgba(245,158,11,0.5) 40%, rgba(249,115,22,0.4) 60%, transparent)' }} />
 
           <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 p-7 sm:p-8">
             {/* Left: text */}
             <div>
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="text-xl animate-float inline-block">✈️</span>
-                <span className="text-[11px] font-bold text-indigo-400 uppercase tracking-[0.18em]">
+                <span className="text-[11px] font-bold text-amber-400 uppercase tracking-[0.18em]">
                   Your Travel Dashboard
                 </span>
               </div>
@@ -211,7 +211,7 @@ export default function App() {
                 <span
                   className="bg-clip-text text-transparent"
                   style={{
-                    backgroundImage: 'linear-gradient(90deg, #818cf8, #a78bfa, #c084fc, #818cf8)',
+                    backgroundImage: 'linear-gradient(90deg, #fbbf24, #fb923c, #f97316, #fbbf24)',
                     backgroundSize: '200% 100%',
                     animation: 'gradient-shift 3.5s linear infinite',
                   }}
@@ -235,7 +235,7 @@ export default function App() {
               <div className="text-center">
                 <p
                   className="text-3xl font-bold leading-none tabular-nums bg-clip-text text-transparent"
-                  style={{ backgroundImage: 'linear-gradient(135deg, #818cf8, #c084fc)' }}
+                  style={{ backgroundImage: 'linear-gradient(135deg, #fbbf24, #f97316)' }}
                 >
                   {countUpcoming(trips)}
                 </p>
@@ -272,9 +272,9 @@ export default function App() {
             {!selectedTrip ? (
               /* Empty state */
               <div className="card relative overflow-hidden flex flex-col items-center justify-center min-h-[440px] p-12 text-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-600/5 via-transparent to-violet-600/5 pointer-events-none rounded-xl" />
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 via-transparent to-orange-600/5 pointer-events-none rounded-xl" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full pointer-events-none"
-                     style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.08), transparent)', animation: 'glow-pulse 4s ease-in-out infinite' }} />
+                     style={{ background: 'radial-gradient(circle, rgba(245,158,11,0.08), transparent)', animation: 'glow-pulse 4s ease-in-out infinite' }} />
 
                 <div className="relative z-10">
                   <div className="text-6xl mb-5 animate-float select-none">🌏</div>
@@ -301,7 +301,7 @@ export default function App() {
                 {/* Trip header with cover image */}
                 <div className="bg-[#111320] rounded-xl border border-white/[0.07] overflow-hidden shadow-card">
                   {/* ── Destination cover photo ────────────────────── */}
-                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-indigo-950 to-slate-950">
+                  <div className="relative h-48 overflow-hidden bg-gradient-to-br from-amber-950 to-slate-950">
                     <img
                       src={getDestinationImage(selectedTrip.destination)}
                       alt={selectedTrip.destination}
@@ -313,7 +313,7 @@ export default function App() {
                     {/* Left vignette */}
                     <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#111320]/60 to-transparent" />
                     {/* Indigo accent line */}
-                    <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-indigo-600 via-violet-500/60 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-amber-500 via-orange-500/60 to-transparent" />
 
                     {/* Back button — overlaid on photo */}
                     <button

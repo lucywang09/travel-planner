@@ -32,19 +32,19 @@
     @apply w-full px-3 py-2.5 text-sm rounded-lg
            bg-white/[0.04] border border-white/[0.08]
            text-slate-200 placeholder-slate-600
-           focus:outline-none focus:ring-1 focus:ring-indigo-500/60
-           focus:border-indigo-500/50 focus:bg-white/[0.07]
+           focus:outline-none focus:ring-1 focus:ring-amber-500/60
+           focus:border-amber-500/50 focus:bg-white/[0.07]
            transition-all duration-150;
   }
 
   /* ── Buttons ─────────────────────────────────── */
   .btn-primary {
     @apply inline-flex items-center gap-2 px-4 py-2.5
-           bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700
+           bg-amber-500 hover:bg-amber-400 active:bg-amber-600
            text-white text-sm font-semibold rounded-lg
            transition-all duration-200
            shadow-glow-btn hover:shadow-glow-btn-hover
-           focus:outline-none focus:ring-2 focus:ring-indigo-500/70
+           focus:outline-none focus:ring-2 focus:ring-amber-500/70
            focus:ring-offset-2 focus:ring-offset-[#111320]
            disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-none;
   }
@@ -55,7 +55,7 @@
            text-slate-300 hover:text-slate-100 text-sm font-medium rounded-lg
            border border-white/[0.09] hover:border-white/[0.15]
            transition-all duration-200
-           focus:outline-none focus:ring-1 focus:ring-indigo-500/60;
+           focus:outline-none focus:ring-1 focus:ring-amber-500/60;
   }
 
   .btn-danger-icon {
@@ -70,8 +70,8 @@
   }
 
   .card-hover {
-    @apply card hover:border-indigo-500/20
-           hover:shadow-[0_4px_30px_rgba(0,0,0,0.55),0_0_0_1px_rgba(99,102,241,0.08)]
+    @apply card hover:border-amber-500/20
+           hover:shadow-[0_4px_30px_rgba(0,0,0,0.55),0_0_0_1px_rgba(245,158,11,0.08)]
            transition-all duration-200;
   }
 }
